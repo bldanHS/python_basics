@@ -37,6 +37,20 @@ print(mylist[1:6])
 # dictionaries are accessed via keys
 
 # ERROR: variables of different types cannot be combined
+print("string and number" + str(44))
 
 # Global vs. local variables in functions
+
+print(myfloat)
+
+def frankyFuntion():
+    global myfloat
+    myfloat = 4.5
+    print(myfloat)
+
+frankyFuntion()
+print(myfloat)
+
+del myfloat
+#print(myfloat)
 
